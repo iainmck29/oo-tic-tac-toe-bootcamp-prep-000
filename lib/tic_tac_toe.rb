@@ -60,5 +60,13 @@ def valid_move?(position)
     return counter
   end
 
+  def current_player
+   if turn_count(@board) == 0
+     return "X"
+   elsif turn_count(@board) % 2 == 0
+     return "X"
+   else return "O"
+   end
+ end
 
 end
