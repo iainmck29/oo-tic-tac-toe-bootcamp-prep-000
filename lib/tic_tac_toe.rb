@@ -50,9 +50,9 @@ def valid_move?(position)
  	end
  end
 
- def turn_count(array)
+ def turn_count
     counter = 0
-    array.each do |element|
+    @board.each do |element|
       if (element == "X" || element == "O")
         counter += 1
       end
