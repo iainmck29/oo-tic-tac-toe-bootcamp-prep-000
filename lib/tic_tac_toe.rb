@@ -50,7 +50,15 @@ def valid_move?(position)
  	end
  end
 
-
+ def turn_count(array)
+    counter = 0
+    array.each do |element|
+      if (element == "X" || element == "O")
+        counter += 1
+      end
+    end
+    return counter
+  end
 
 
 end
