@@ -28,6 +28,8 @@ def input_to_index(user_input)
   return index
 end
 
-
-
+def move(@board, character = "X")
+  @board[] = character
+  return @board
+end
 end
