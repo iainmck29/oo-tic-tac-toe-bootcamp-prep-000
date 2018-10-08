@@ -69,7 +69,6 @@ def valid_move?(position)
    end
  end
 
-end
 
 def turn
   puts "Please enter 1-9:"
@@ -79,7 +78,7 @@ if valid_move?(index) == true
   player_token = current_player
   move(index, current_player)
   display_board
-else
+else turn
 end
 
 
