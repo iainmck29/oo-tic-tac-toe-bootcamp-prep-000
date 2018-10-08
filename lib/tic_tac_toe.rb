@@ -39,6 +39,16 @@ def position_taken?(index)
   elsif @board[index] == "X" || @board[index] == "O"
     return true
 end
+
+def valid_move?(position)
+
+	if !position_taken?(postition) && position.between?(0,8)
+		true
+ 	else
+		false
+ 	end
+ end
+
 end
 
 
