@@ -79,7 +79,7 @@ if valid_move?(index) == true
   player_token = current_player
   move(index, current_player)
   display_board
-else turn
+else
 end
 
 
